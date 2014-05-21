@@ -12,6 +12,7 @@
  * @author ronaldbf
  */
 class Montadora {
+    
     private $nomeMontadora;
     private $codigoMontadora;
     private $estadoMatriz;
@@ -23,10 +24,14 @@ class Montadora {
         
     }
 
-
+    //Função que será chamada pelo comando echo...
     public function __toString() {
         
-        
+        //Retorna uma string...
+        $saidaString = "Montadora ".$this->nomeMontadora.'<br>'.
+                "===============================".'<br>'.
+                "Código: ".$this->codigoMontadora.'<br>'.
+                "Estado Matriz: ".$this->estadoMatriz.'<br>';
         
         return $saidaString;
     }

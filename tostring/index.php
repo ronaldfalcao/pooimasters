@@ -7,7 +7,7 @@ and open the template in the editor.
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Teste para a função __toString</title>
+        <title>Teste para __toString</title>
     </head>
     <body>
         <?php

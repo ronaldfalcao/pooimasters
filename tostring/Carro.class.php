@@ -12,5 +12,26 @@
  * @author ronaldbf
  */
 class Carro {
-    //put your code here
+    
+    private $modelo;
+    private $cor;
+    private $anoFabricacao;
+    private $montadora;
+            
+    function __construct($Modelo, $Cor, $AnoFabricacao, $Montadora) {
+            $this->modelo = $Modelo;
+            $this->cor = $Cor;
+            $this->anoFabricacao = $AnoFabricacao;
+            $this->montadora = $Montadora;
+    }
+    
+    function __toString() {
+        $saidaString = "----------------------------------------------------".'<br>'.
+                       "Modelo ".$this->modelo.'<br>'.
+                       "Cor: ".$this->cor.'<br>'.
+                       "Ano de Fabricação: ".$this->anoFabricacao.'<br>'.
+                       "Montadora: ".$this->montadora.'<br>';
+        
+        return $saidaString;
+    }
 }
