@@ -1,7 +1,8 @@
 <?php
+    
     include_once 'InterfaceCorpoCeleste.php';
     
-    class Estrela implements CorpoCeleste{
+    class Satelite implements CorpoCeleste{
         
         private $nome;
         
@@ -14,12 +15,13 @@
         }
         
         public function mensagem() {
-            echo 'Eu sou uma Estrela e me chamo '.$this->nome.'<br/>';
+            echo 'Eu sou um Satélite e me chamo '.$this->nome.'<br/>';
         }
         
         public function brilhoProprio() {
-            echo 'Eu tenho brilho próprio';
+            echo 'Eu não tenho brilho próprio';
         }
-
+        
+        
     }
 
